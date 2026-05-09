@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Buku Tamu - Cahaya Studio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="buku-tamu.html">Buku Tamu</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>📷 Cahaya Studio</h1>
+    <p>Buku Tamu & Pemesanan</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Form Buku Tamu</h2>
+
+      <form action="" method="post" enctype="multipart/form-data">
+
+        <table border="1" cellpadding="8" cellspacing="0">
+
+          <!-- Nama -->
+          <tr>
+            <td>Nama Lengkap</td>
+            <td><input type="text" name="nama" placeholder="Nama lengkap Anda" required /></td>
+          </tr>
+
+          <!-- Email -->
+          <tr>
+            <td>Email</td>
+            <td><input type="email" name="email" placeholder="email@contoh.com" required /></td>
+          </tr>
+
+          <!-- Telepon -->
+          <tr>
+            <td>No. Telepon</td>
+            <td><input type="tel" name="telepon" placeholder="08xx-xxxx-xxxx" /></td>
+          </tr>
+
+          <!-- Asal Kota -->
+          <tr>
+            <td>Asal Kota</td>
+            <td><input type="text" name="kota" placeholder="Kota Anda" /></td>
+          </tr>
+
+          <!-- Jenis Kelamin -->
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>
+              <label><input type="radio" name="jk" value="laki-laki" /> Laki-laki</label>
+              &nbsp;&nbsp;
+              <label><input type="radio" name="jk" value="perempuan" /> Perempuan</label>
+            </td>
+          </tr>
+
+          <!-- Layanan -->
+          <tr>
+            <td>Layanan yang Diminati</td>
+            <td>
+              <select name="layanan">
+                <option value="">-- Pilih Layanan --</option>
+                <option value="pernikahan">Foto Pernikahan</option>
+                <option value="wisuda">Foto Wisuda</option>
+                <option value="produk">Foto Produk</option>
+                <option value="keluarga">Foto Keluarga</option>
+              </select>
+            </td>
+          </tr>
+
+          <!-- Tanggal Sesi -->
+          <tr>
+            <td>Tanggal Sesi</td>
+            <td><input type="date" name="tanggal" /></td>
+          </tr>
+
+          <!-- Jumlah Orang -->
+          <tr>
+            <td>Jumlah Orang</td>
+            <td><input type="number" name="jumlah" min="1" placeholder="Contoh: 2" /></td>
+          </tr>
+
+          <!-- Lokasi -->
+          <tr>
+            <td>Preferensi Lokasi</td>
+            <td>
+              <label><input type="checkbox" name="lokasi[]" value="studio" /> Di Studio</label><br/>
+              <label><input type="checkbox" name="lokasi[]" value="outdoor" /> Outdoor</label><br/>
+              <label><input type="checkbox" name="lokasi[]" value="rumah" /> Di Rumah / Venue</label>
+            </td>
+          </tr>
+
+          <!-- Pesan -->
+          <tr>
+            <td>Pesan / Keterangan</td>
+            <td>
+              <textarea name="pesan" rows="4" cols="40" placeholder="Tuliskan kebutuhan atau pertanyaan Anda..."></textarea>
+            </td>
+          </tr>
+
+          <!-- Hidden -->
+          <tr>
+            <td>Hidden ID</td>
+            <td><input type="hidden" name="id_pesan" value="FT-001" /></td>
+          </tr>
+
+          <!-- Tombol -->
+          <tr>
+            <td>Aksi</td>
+            <td>
+              <input type="submit" value="Kirim Pesan" />
+              <input type="reset" value="Reset" />
+            </td>
+          </tr>
+
+        </table>
+
+      </form>
+
+      <br/>
+      <a href="index.html" class="tombol">← Kembali ke Home</a>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Cahaya Studio - Jasa Fotografi Profesional</p>
+  </footer>
+
+</body>
+</html>
